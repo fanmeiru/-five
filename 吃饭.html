@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>吃</title>
+    <style>
+        #eat{
+            width:100%;
+            font-size:30px;
+        }
+    </style>
+</head>
+<body>
+    <div id='eat'></div>
+</body>
+<script>
+    let foods = ['麻辣拌','喜乐士','粉丝汤','土豆粉','卷膜','烤冷面','拌面','牛肉饭','麻辣烫','花甲粉','小马拉面','饺子','煎饼','馄饨','蛋堡','包子、饼','馒头菜'];
+    let today = Math.ceil(Math.random()*foods.length);
+    console.log(today)
+    let div = document.getElementById('eat');
+    console.log(div)
+    div.innerHTML = foods[today];
+</script>
+</html>
